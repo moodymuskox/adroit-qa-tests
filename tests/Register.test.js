@@ -3,6 +3,12 @@ const chrome = require('selenium-webdriver/chrome');
 
 const url = "https://cleango.hu/";
 
+const generateSevenDigitNumber = () => {
+  const min = 1000000;
+  const max = 9999999;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 const navigateToPage = async () => {
   const options = new chrome.Options().headless();
   const driver = await new Builder()
@@ -77,12 +83,12 @@ test('invalid email and password', async () => {
   }
 });
 
-xtest('successful registration', async () => {
+test('successful registration', async () => {
   const driver = await navigateToPage();
 
-  // TODO: randomize phone and email values or change them to an unused one
-  const phoneNumber = "+36301000000";
-  const emailAddress = "valid@email4.com";
+  const randomTestID = generateSevenDigitNumber();
+  const phoneNumber = `+3630${randomTestID}`;
+  const emailAddress = `test_${randomTestID}@email.com`;
 
   try {
     const emailField = await driver.findElement(By.xpath('//*[@id="email"]'));
