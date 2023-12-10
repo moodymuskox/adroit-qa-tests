@@ -36,7 +36,7 @@ Recommended severity is high since this issue can lead to incomplete or incorrec
 &nbsp;
 &nbsp;
 
-### Issue 2: "Enable notifications and location" page is unresponsive
+### Issue 2: Language icon in the header of the page appears distorted
 
 #### Summary
 
