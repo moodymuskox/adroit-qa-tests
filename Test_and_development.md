@@ -1,7 +1,7 @@
-# Test Plan: Cleango App
+# Test and Development plan
 
 ## Introduction
-The test plan outlines the testing approach and strategies for the Cleango App, emphasizing the setup of automated testing frameworks and their integration with development activities.
+The test and development plan outlines the development and testing approach and strategies, emphasizing the setup of automated testing frameworks and their integration with development activities.
 
 ## Objectives
 1. Implement an efficient testing framework.
@@ -63,4 +63,4 @@ The test plan outlines the testing approach and strategies for the Cleango App, 
    - Agile development cycles based on the test results.
 
 ## Conclusion
-The test plan aims to establish an effective testing framework and integrate it seamlessly into the development process, ensuring code quality, stability, and reliability of the Cleango App.
+The development plan aims to establish an effective testing framework and integrate it seamlessly into the development process, ensuring code quality, stability, and reliability.

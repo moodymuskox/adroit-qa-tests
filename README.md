@@ -2,9 +2,9 @@
 
 This repo contains my solutions to the Adroit QA home assignment.
 
-## Test plan
+## Test and development plan
 
-See [Test plan](/Testplan.md)
+See [Test and development plan](/Test_and_development.md)
 
 ## Test scenarios
 
