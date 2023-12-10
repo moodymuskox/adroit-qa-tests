@@ -4,6 +4,7 @@
 Feature: Cleango App Launch
 
   1. Scenario: Navigating to the home page of Cleango
+
     Given I am on the phone's home screen
     When I tap on the app icon for Cleango
     Then I should see the "Enable Notifications" page with options
@@ -14,9 +15,10 @@ Feature: Cleango App Launch
 Feature: Cleango Login/Logout
 
   1. Scenario: Login to Cleango
+
     Given I am on the phone's home screen
     When I tap on the app icon for Cleango
-    Then I am on the "Hello from Cleango! screen
+    Then I am on the "Hello from Cleango!" screen
     And I should see a Language icon on the top right of the screen
     And I should see fields for phone number
     And I should see a "More" button
@@ -36,19 +38,25 @@ Feature: Cleango Login/Logout
     Then I should be directed to the home page of the app
 
   2. Scenario: Logout from Cleango
+
     Given I am logged in to Cleango
     When I select "My profile" on the footer menu
     Then I should see the "My profile" screen
+
     When I select the cogwheel icon on the top right of the screen
     Then I should see the "Settings" page
+
     When I select "Safety"
     Then I should see the "Safety" options screen
+    
     When I select "Logout"
     Then I should be logged out from the app
     And I should be on the "Hello from Cleango! screen
 
 Feature: Car Wash Order Process
+
   1. Scenario: Ordering a Car Wash Successfully
+
     Given I am logged in to Cleango
     And I am on the Home page
     When I tap on the "Order" button
