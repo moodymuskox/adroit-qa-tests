@@ -48,10 +48,10 @@ Feature: Cleango Login/Logout
 
     When I select "Safety"
     Then I should see the "Safety" options screen
-    
+
     When I select "Logout"
     Then I should be logged out from the app
-    And I should be on the "Hello from Cleango! screen
+    And I should be on the "Hello from Cleango!" screen
 
 Feature: Car Wash Order Process
 
