@@ -2,10 +2,13 @@
 
 This repo contains my solutions to the Adroit QA home assignment.
 
+## Test plan
+
+See [Test plan](/Testplan.md)
+
 ## Test scenarios
 
-See [Test scenarios](/test-scenarios.md)
-
+See [Test scenarios](/test-scenarios.feature.md)
 
 ## Automated tests
 
