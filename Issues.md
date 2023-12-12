@@ -8,6 +8,8 @@ In the **browser version** of the app, during the registration process when the 
 
 #### Environment
 
+**Build**: Production
+
 1. **macOS 13.4** (22F66)
     - Safari 16.5 (18615.2.9.11.4)
     - Google Chrome 117.0.5938.92
@@ -25,6 +27,12 @@ In the **browser version** of the app, during the registration process when the 
 1. Enter a valid phone number to the phone number field
 1. Select register button
 1. Observe that registration was successful
+
+#### Expected behaviour
+Only full e-mail addresses should be accepted during registration.
+
+#### Actual behaviour
+E-mail addresses without TLD are accepted during registration.
 
 #### Priority
 Recommended priority is medium, since this issue can affect the core functionality of user registration and may lead to inaccurate or incomplete user data
@@ -44,6 +52,8 @@ In the **mobile browser** version of the app, the language icon in the header of
 
 #### Environment
 
+**Build**: Production
+
 1. **iOS 17.1.2**
     - Safari 17
     - Google Chrome 119.0.6045.169
@@ -52,6 +62,12 @@ In the **mobile browser** version of the app, the language icon in the header of
 #### Repro steps
 1. As a non-logged in user, access homepage: https://cleango.hu/
 1. Observe the distorted language app icon in the header of the page
+
+#### Expected behaviour
+The language icon should appear round, without distortion.
+
+#### Actual behaviour
+The language icon in the header of the page appears distorted.
 
 #### Priority
 Recommended priority is low, as this issue primarily affects the visual aspect and doesn't obstruct core functionalities.
