@@ -1,12 +1,12 @@
 # Issues found
 
-### Issue 1: E-mail without top level domain is accepted at registration
+## Issue 1: E-mail without top level domain is accepted at registration
 
-#### Summary
+### Summary
 
 In the **browser version** of the app, during the registration process when the user has to enter a valid e-mail address, e-mail addresses without top level domain are accepted and registration is allowed.
 
-#### Environment
+### Environment
 
 **Build**: Production
 
@@ -20,7 +20,7 @@ In the **browser version** of the app, during the registration process when the 
 
 **Credentials:** "test@email" + valid phone number
 
-#### Repro steps
+### Repro steps
 1. As a non-logged in user, access homepage: https://cleango.hu/
 1. Go to the registration form on the homepage
 1. Enter an e-mail address without top level domain to the e-mail field
@@ -28,29 +28,29 @@ In the **browser version** of the app, during the registration process when the 
 1. Select register button
 1. Observe that registration was successful
 
-#### Expected behaviour
+### Expected behaviour
 Only full e-mail addresses should be accepted during registration.
 
-#### Actual behaviour
+### Actual behaviour
 E-mail addresses without TLD are accepted during registration.
 
-#### Priority
+### Priority
 Recommended priority is medium, since this issue can affect the core functionality of user registration and may lead to inaccurate or incomplete user data
 
-#### Severity
+### Severity
 Recommended severity is high since this issue can lead to incomplete or incorrect user registrations, affecting communication, authentication, and data accuracy within the app
 
 &nbsp;
 &nbsp;
 &nbsp;
 
-### Issue 2: Language icon in the header of the page appears distorted
+## Issue 2: Language icon in the header of the page appears distorted
 
-#### Summary
+### Summary
 
 In the **mobile browser** version of the app, the language icon in the header of the page appears distorted.
 
-#### Environment
+### Environment
 
 **Build**: Production
 
@@ -59,28 +59,28 @@ In the **mobile browser** version of the app, the language icon in the header of
     - Google Chrome 119.0.6045.169
 
 
-#### Repro steps
+### Repro steps
 1. As a non-logged in user, access homepage: https://cleango.hu/
 1. Observe the distorted language app icon in the header of the page
 
-#### Expected behaviour
+### Expected behaviour
 The language icon should appear round, without distortion.
 
-#### Actual behaviour
+### Actual behaviour
 The language icon in the header of the page appears distorted.
 
-#### Priority
+### Priority
 Recommended priority is low, as this issue primarily affects the visual aspect and doesn't obstruct core functionalities.
 
-#### Severity
+### Severity
 Recommended severity is low, because the icon affects how the app looks but doesn't stop users from using the primary functionalities.
 
-#### Attachments
+### Attachments
 
-##### Chrome
+#### Chrome
 
 ![ios](/attachments//Issue2_iOS_Chrome.PNG)
 
-##### Safari
+#### Safari
 
 ![chrome](/attachments/Issue2_iOS_Safari.PNG)
